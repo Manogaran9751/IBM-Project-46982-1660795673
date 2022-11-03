@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(243, 218, 168);
+}
+
+h1{
+    color: black;
+}
+
+.ImgSlider{
+    width: 60%;
+    height: 600px;
+    background-image: url('https://image.ibb.co/dRg79S/chat_character_man.png');
+    background-size: 100% 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: changeImage 60s linear infinite;
+}
+
+@keyframes changeImage{
+    0% {
+        background-image: url('https://www.codewithc.com/wp-content/uploads/2014/09/customer-care.jpg');
+    }
+    25% {
+        background-image: url('https://pbs.twimg.com/media/E_fMuqTXsAEibPj.jpg');
+    }
+    50% {
+        background-image: url('https://www.federalbank.co.in/o/federal-bank-theme/images/mobile-icon.png');
+    }
+    75% {
+        background-image: url('https://mlh7tvxiduka.i.optimole.com/w:285/h:214/q:mauto/http://beesion.com/wp-content/uploads/2017/05/Subscriber.png');
+    }
+    100% {
+        background-image: url('https://www.kindpng.com/picc/m/62-624367_woman-pointing-transparent-png-download-lady-pointing-png.png');
+    }
+}
